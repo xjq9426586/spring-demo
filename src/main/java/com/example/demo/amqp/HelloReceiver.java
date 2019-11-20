@@ -11,10 +11,9 @@ import org.springframework.stereotype.Component;
 import com.rabbitmq.client.Channel;
  
 @Component
-@RabbitListener(queues = "mn")
 public class HelloReceiver {
- 
-    @RabbitHandler
+
+    @RabbitListener(queues = "fanout.A")
     public void process(String hello,Channel channel, Message message) throws IOException {
         System.out.println("HelloReceiver收到  : " + hello +"收到时间"+new Date());
         try {
