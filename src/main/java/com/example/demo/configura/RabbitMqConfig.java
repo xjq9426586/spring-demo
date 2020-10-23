@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
  
-@Configuration
+//@Configuration
 public class RabbitMqConfig {
     /**
      * 创建三个队列   一个fanoutexchange路由器（交换机），将三个队列分别绑定到交换机上去

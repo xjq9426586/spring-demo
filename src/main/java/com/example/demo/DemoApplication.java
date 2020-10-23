@@ -19,19 +19,19 @@ public class DemoApplication extends SpringBootServletInitializer{
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-	// @Bean
-	// public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-	// return args -> {
-	// // spring aop
-	// System.out.println("******** spring aop ******** ");
-	// personSpring.sayHi();
-	// personSpring.sayBye();
-	// System.exit(0);
-	// };
-	// }
+//	 @Bean
+//	 public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+//	 return args -> {
+//	 // spring aop
+//	 System.out.println("******** spring aop ******** ");
+//	 personSpring.sayHi();
+//	 personSpring.sayBye();
+//	 System.exit(0);
+//	 };
+//	 }
 	
-	  @Override
-	    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-	        return application.sources(DemoApplication.class);
-	    }
+//	  @Override
+//	    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+//	        return application.sources(DemoApplication.class);
+//	    }
 }
