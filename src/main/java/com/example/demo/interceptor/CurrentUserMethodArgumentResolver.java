@@ -20,7 +20,7 @@ public class CurrentUserMethodArgumentResolver implements HandlerMethodArgumentR
     }
 
     @Override
-    public Object resolveArgument(MethodParameter methodParameter, ModelAndViewContainer modelAndViewContainer, NativeWebRequest nativeWebRequest, WebDataBinderFactory webDataBinderFactory) throws Exception {
-        return (CurrentUser) nativeWebRequest.getAttribute("current_user", RequestAttributes.SCOPE_REQUEST);
+    public Object resolveArgument(MethodParameter methodParameter, ModelAndViewContainer modelAndViewContainer, NativeWebRequest nativeWebRequest, WebDataBinderFactory webDataBinderFactory) {
+        return nativeWebRequest.getAttribute("current_user", RequestAttributes.SCOPE_REQUEST);
     }
 }
